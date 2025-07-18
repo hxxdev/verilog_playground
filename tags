@@ -65,7 +65,6 @@
 !_TAG_KIND_DESCRIPTION!SystemVerilog	r,register	/variable data types/
 !_TAG_KIND_DESCRIPTION!SystemVerilog	t,task	/tasks/
 !_TAG_KIND_DESCRIPTION!SystemVerilog	w,member	/struct and union members/
-!_TAG_KIND_DESCRIPTION!Yaml	a,anchor	/anchors/
 !_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
@@ -73,7 +72,6 @@
 !_TAG_PARSER_VERSION!C	1.1	/current.age/
 !_TAG_PARSER_VERSION!C++	1.1	/current.age/
 !_TAG_PARSER_VERSION!SystemVerilog	1.1	/current.age/
-!_TAG_PARSER_VERSION!Yaml	0.0	/current.age/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
 !_TAG_PROC_CWD	/home/hxxdev/dev/systemverilog/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
@@ -94,7 +92,6 @@
 !_TAG_ROLE_DESCRIPTION!C++!module	partOwner	/used for specifying a partition/
 !_TAG_ROLE_DESCRIPTION!C++!partition	imported	/imported with "imported ..."/
 !_TAG_ROLE_DESCRIPTION!SystemVerilog!module	decl	/declaring instances/
-!_TAG_ROLE_DESCRIPTION!Yaml!anchor	alias	/alias/
 ADDRESS	./uvm-verilator/src/reg/uvm_mem.svh	/^   typedef enum {UNKNOWNS, ZEROES, ONES, ADDRESS, VALUE, INCR, DECR} init_e;$/;"	c	language:SystemVerilog	typedef:uvm_mem.init_e
 AFTER	./uvm-verilator/src/comps/uvm_algorithmic_comparator.svh	/^                                    type AFTER=int,$/;"	c	language:SystemVerilog	class:uvm_algorithmic_comparator
 ARGV_STACK_PTR_SIZE	./uvm-verilator/src/dpi/uvm_svcmd_dpi.c	/^#define ARGV_STACK_PTR_SIZE /;"	d	language:C	file:
@@ -999,7 +996,7 @@ add_typewide_sequence	./uvm-verilator/src/seq/uvm_sequence_library.svh	/^functio
 add_typewide_sequences	./uvm-verilator/src/seq/uvm_sequence_library.svh	/^function void uvm_sequence_library::add_typewide_sequences(uvm_object_wrapper seq_types[$]);$/;"	f	language:SystemVerilog	class:uvm_sequence_library
 add_uvm_phases	./uvm-verilator/src/base/uvm_domain.svh	/^  static function void add_uvm_phases(uvm_phase schedule);$/;"	f	language:SystemVerilog	class:uvm_domain
 add_vreg	./uvm-verilator/src/reg/uvm_reg_block.svh	/^function void uvm_reg_block::add_vreg(uvm_vreg vreg);$/;"	f	language:SystemVerilog	class:uvm_reg_block
-addr	./tb/my_transaction.sv	/^    rand bit [7:0] addr;$/;"	r	language:SystemVerilog	class:my_transaction
+addr	./tb/my_transaction.sv	/^  rand bit [7:0] addr;$/;"	r	language:SystemVerilog	class:my_transaction
 addr	./uvm-verilator/src/reg/uvm_mem.svh	/^                                    ref uvm_reg_addr_t addr[]);$/;"	p	language:SystemVerilog	function:uvm_mem.get_addresses
 addr	./uvm-verilator/src/reg/uvm_mem.svh	/^   \/*local*\/ function void XsampleX(uvm_reg_addr_t addr,$/;"	p	language:SystemVerilog	function:uvm_mem.XsampleX
 addr	./uvm-verilator/src/reg/uvm_mem.svh	/^   uvm_reg_addr_t  addr[];$/;"	r	language:SystemVerilog	function:uvm_mem.get_address
@@ -1293,7 +1290,7 @@ blocking_slave_export	./uvm-verilator/src/tlm1/uvm_tlm_req_rsp.svh	/^           
 bmatches	./uvm-verilator/src/base/uvm_misc.svh	/^  int  bmatches;$/;"	r	language:SystemVerilog	function:uvm_leaf_scope
 bo	./uvm-verilator/src/reg/uvm_reg_map.svh	/^	   int unsigned bo;$/;"	r	language:SystemVerilog	function:uvm_reg_map.Xinit_address_mapX
 bobj	./uvm-verilator/src/base/uvm_callback.svh	/^    uvm_object bobj = obj;$/;"	r	language:SystemVerilog	function:uvm_typed_callbacks.display
-body	./tb/uvm_test.sv	/^    virtual task body();$/;"	t	language:SystemVerilog	class:MyUvmSequence
+body	./tb/uvm_test.sv	/^  virtual task body();$/;"	t	language:SystemVerilog	class:MyUvmSequence
 body	./uvm-verilator/src/reg/sequences/uvm_mem_access_seq.svh	/^   virtual task body();$/;"	t	language:SystemVerilog	class:uvm_mem_access_seq
 body	./uvm-verilator/src/reg/sequences/uvm_mem_access_seq.svh	/^   virtual task body();$/;"	t	language:SystemVerilog	class:uvm_mem_single_access_seq
 body	./uvm-verilator/src/reg/sequences/uvm_mem_walk_seq.svh	/^   virtual task body();$/;"	t	language:SystemVerilog	class:uvm_mem_single_walk_seq
@@ -1321,9 +1318,9 @@ build_coverage	./uvm-verilator/src/reg/uvm_mem.svh	/^function uvm_reg_cvr_t uvm_
 build_coverage	./uvm-verilator/src/reg/uvm_reg.svh	/^function uvm_reg_cvr_t uvm_reg::build_coverage(uvm_reg_cvr_t models);$/;"	f	language:SystemVerilog	class:uvm_reg
 build_coverage	./uvm-verilator/src/reg/uvm_reg_block.svh	/^function uvm_reg_cvr_t uvm_reg_block::build_coverage(uvm_reg_cvr_t models);$/;"	f	language:SystemVerilog	class:uvm_reg_block
 build_ph	./uvm-verilator/src/base/uvm_domain.svh	/^uvm_phase build_ph;$/;"	r	language:SystemVerilog
-build_phase	./tb/uvm_test.sv	/^    virtual function void build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
-build_phase	./tb/uvm_test.sv	/^    virtual function void build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:MyUvmTest
-build_phase	./tb/uvm_test.sv	/^    virtual function void build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:ReadByName
+build_phase	./tb/uvm_test.sv	/^  virtual function void build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
+build_phase	./tb/uvm_test.sv	/^  virtual function void build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:MyUvmTest
+build_phase	./tb/uvm_test.sv	/^  virtual function void build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:ReadByName
 build_phase	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_component
 build_phase	./uvm-verilator/src/base/uvm_root.svh	/^function void uvm_root::build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_root
 build_phase	./uvm-verilator/src/comps/uvm_agent.svh	/^  function void build_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_agent
@@ -1382,8 +1379,8 @@ c	./uvm-verilator/src/tlm2/uvm_tlm2_sockets.svh	/^    uvm_component c;$/;"	r	lan
 c	./uvm-verilator/src/tlm2/uvm_tlm2_sockets.svh	/^    uvm_component c;$/;"	r	language:SystemVerilog	function:uvm_tlm_nb_passthrough_initiator_socket.connect
 c	./uvm-verilator/src/tlm2/uvm_tlm2_sockets.svh	/^    uvm_component c;$/;"	r	language:SystemVerilog	function:uvm_tlm_nb_passthrough_target_socket.connect
 c	./uvm-verilator/src/tlm2/uvm_tlm2_sockets.svh	/^    uvm_component c;$/;"	r	language:SystemVerilog	function:uvm_tlm_nb_target_socket.connect
-c_addr_range	./tb/my_transaction.sv	/^    constraint c_addr_range {addr inside {[8'h00 : 8'hFF]};}$/;"	O	language:SystemVerilog	class:my_transaction
-c_data_range	./tb/my_transaction.sv	/^    constraint c_data_range {data inside {[8'h00 : 8'hFF]};}$/;"	O	language:SystemVerilog	class:my_transaction
+c_addr_range_	./tb/my_transaction.sv	/^  constraint c_addr_range_ {addr inside {[8'h00 : 8'hFF]};}$/;"	O	language:SystemVerilog	class:my_transaction
+c_data_range_	./tb/my_transaction.sv	/^  constraint c_data_range_ {data inside {[8'h00 : 8'hFF]};}$/;"	O	language:SystemVerilog	class:my_transaction
 c_prec	./uvm-verilator/src/base/uvm_resource.svh	/^    int unsigned c_prec;$/;"	r	language:SystemVerilog	function:uvm_resource_pool.get_highest_precedence
 call_pre_post	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^                      bit call_pre_post = 1);$/;"	p	language:SystemVerilog	task:uvm_sequence_base.uvm_sequence_base.start
 callback_mode	./uvm-verilator/src/base/uvm_callback.svh	/^  function bit callback_mode(int on=-1);$/;"	f	language:SystemVerilog	class:uvm_callback
@@ -1486,7 +1483,7 @@ check_handle_kind	./uvm-verilator/src/base/uvm_recorder.svh	/^  virtual function
 check_inst_override_exists	./uvm-verilator/src/base/uvm_factory.svh	/^function bit uvm_default_factory::check_inst_override_exists (uvm_object_wrapper original_type,$/;"	f	language:SystemVerilog	class:uvm_default_factory
 check_mem	./uvm-verilator/src/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh	/^    protected virtual function void check_mem(uvm_mem m,$/;"	f	language:SystemVerilog	class:uvm_reg_mem_hdl_paths_seq
 check_ph	./uvm-verilator/src/base/uvm_domain.svh	/^uvm_phase check_ph;$/;"	r	language:SystemVerilog
-check_phase	./tb/uvm_test.sv	/^    virtual function void check_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
+check_phase	./tb/uvm_test.sv	/^  virtual function void check_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
 check_phase	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::check_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_component
 check_phase	./uvm-verilator/src/reg/uvm_reg_predictor.svh	/^  virtual function void check_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_reg_predictor
 check_port_connections	./uvm-verilator/src/comps/uvm_push_driver.svh	/^  function void check_port_connections();$/;"	f	language:SystemVerilog	class:uvm_push_driver
@@ -1645,7 +1642,7 @@ compare_field_real	./uvm-verilator/src/base/uvm_comparer.svh	/^  virtual functio
 compare_map	./uvm-verilator/src/base/uvm_comparer.svh	/^  bit compare_map[uvm_object][uvm_object];$/;"	r	language:SystemVerilog	class:uvm_comparer
 compare_object	./uvm-verilator/src/base/uvm_comparer.svh	/^  virtual function bit compare_object (string name,$/;"	f	language:SystemVerilog	class:uvm_comparer
 compare_string	./uvm-verilator/src/base/uvm_comparer.svh	/^  virtual function bit compare_string (string name,$/;"	f	language:SystemVerilog	class:uvm_comparer
-comparer	./tb/my_transaction.sv	/^    function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	p	language:SystemVerilog	function:my_transaction.do_compare
+comparer	./tb/my_transaction.sv	/^  function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	p	language:SystemVerilog	function:my_transaction.do_compare
 comparer	./uvm-verilator/src/base/uvm_comparer.svh	/^  static function void set_default (uvm_comparer comparer) ;$/;"	p	language:SystemVerilog	function:uvm_comparer.set_default
 comparer	./uvm-verilator/src/base/uvm_coreservice.svh	/^	virtual function void set_default_comparer(uvm_comparer comparer);$/;"	p	language:SystemVerilog	function:uvm_default_coreservice_t.set_default_comparer
 comparer	./uvm-verilator/src/base/uvm_object.svh	/^                                      uvm_comparer comparer);$/;"	p	language:SystemVerilog	function:uvm_object.do_compare
@@ -1694,9 +1691,9 @@ connect	./uvm-verilator/src/tlm2/uvm_tlm2_sockets.svh	/^  function void connect(
 connect	./uvm-verilator/src/tlm2/uvm_tlm2_sockets.svh	/^  function void connect(this_type provider);$/;"	f	language:SystemVerilog	class:uvm_tlm_nb_passthrough_target_socket
 connect	./uvm-verilator/src/tlm2/uvm_tlm2_sockets.svh	/^  function void connect(this_type provider);$/;"	f	language:SystemVerilog	class:uvm_tlm_nb_target_socket
 connect_ph	./uvm-verilator/src/base/uvm_domain.svh	/^uvm_phase connect_ph;$/;"	r	language:SystemVerilog
-connect_phase	./tb/uvm_test.sv	/^    virtual function void connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
-connect_phase	./tb/uvm_test.sv	/^    virtual function void connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:MyUvmTest
-connect_phase	./tb/uvm_test.sv	/^    virtual function void connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:ReadByName
+connect_phase	./tb/uvm_test.sv	/^  virtual function void connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
+connect_phase	./tb/uvm_test.sv	/^  virtual function void connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:MyUvmTest
+connect_phase	./tb/uvm_test.sv	/^  virtual function void connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:ReadByName
 connect_phase	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_component
 connect_phase	./uvm-verilator/src/comps/uvm_algorithmic_comparator.svh	/^  virtual function void connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_algorithmic_comparator
 connect_phase	./uvm-verilator/src/comps/uvm_in_order_comparator.svh	/^  virtual function void connect_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_in_order_comparator
@@ -1944,7 +1941,7 @@ dash_id	./uvm-verilator/src/base/uvm_printer.svh	/^    string dash_id, dash_typ,
 dash_sz	./uvm-verilator/src/base/uvm_printer.svh	/^    string dash_id, dash_typ, dash_sz;$/;"	r	language:SystemVerilog	function:uvm_table_printer.emit
 dash_typ	./uvm-verilator/src/base/uvm_printer.svh	/^    string dash_id, dash_typ, dash_sz;$/;"	r	language:SystemVerilog	function:uvm_table_printer.emit
 dashes	./uvm-verilator/src/base/uvm_printer.svh	/^  string dashes;$/;"	r	language:SystemVerilog	function:uvm_table_printer.emit
-data	./tb/my_transaction.sv	/^    rand bit [7:0] data;$/;"	r	language:SystemVerilog	class:my_transaction
+data	./tb/my_transaction.sv	/^  rand bit [7:0] data;$/;"	r	language:SystemVerilog	class:my_transaction
 data	./uvm-verilator/src/base/uvm_event.svh	/^	virtual function void trigger (T data=get_default_data());$/;"	p	language:SystemVerilog	function:uvm_event.trigger
 data	./uvm-verilator/src/base/uvm_event.svh	/^	virtual task wait_ptrigger_data (output T data);$/;"	p	language:SystemVerilog	task:uvm_event.wait_ptrigger_data
 data	./uvm-verilator/src/base/uvm_event.svh	/^	virtual task wait_trigger_data (output T data);$/;"	p	language:SystemVerilog	task:uvm_event.wait_trigger_data
@@ -2096,7 +2093,7 @@ do_close	./uvm-verilator/src/base/uvm_recorder.svh	/^   protected virtual functi
 do_close	./uvm-verilator/src/base/uvm_text_tr_stream.svh	/^   protected virtual function void do_close();$/;"	f	language:SystemVerilog	class:uvm_text_tr_stream
 do_close	./uvm-verilator/src/base/uvm_tr_stream.svh	/^   protected virtual function void do_close();$/;"	f	language:SystemVerilog	class:uvm_tr_stream
 do_close_db	./uvm-verilator/src/base/uvm_text_tr_database.svh	/^   protected virtual function bit do_close_db();$/;"	f	language:SystemVerilog	class:uvm_text_tr_database
-do_compare	./tb/my_transaction.sv	/^    function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	f	language:SystemVerilog	class:my_transaction
+do_compare	./tb/my_transaction.sv	/^  function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	f	language:SystemVerilog	class:my_transaction
 do_compare	./uvm-verilator/src/base/uvm_object.svh	/^function bit  uvm_object::do_compare (uvm_object rhs,$/;"	f	language:SystemVerilog	class:uvm_object
 do_compare	./uvm-verilator/src/comps/uvm_pair.svh	/^  virtual function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	f	language:SystemVerilog	class:uvm_built_in_pair
 do_compare	./uvm-verilator/src/comps/uvm_pair.svh	/^  virtual function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	f	language:SystemVerilog	class:uvm_class_pair
@@ -2108,7 +2105,7 @@ do_compare	./uvm-verilator/src/reg/uvm_reg_file.svh	/^function bit uvm_reg_file:
 do_compare	./uvm-verilator/src/reg/uvm_vreg.svh	/^function bit uvm_vreg::do_compare (uvm_object  rhs,$/;"	f	language:SystemVerilog	class:uvm_vreg
 do_compare	./uvm-verilator/src/reg/uvm_vreg_field.svh	/^function bit uvm_vreg_field::do_compare (uvm_object  rhs,$/;"	f	language:SystemVerilog	class:uvm_vreg_field
 do_compare	./uvm-verilator/src/tlm2/uvm_tlm2_generic_payload.svh	/^  function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	f	language:SystemVerilog	class:uvm_tlm_generic_payload
-do_copy	./tb/my_transaction.sv	/^    function void do_copy(uvm_object rhs);$/;"	f	language:SystemVerilog	class:my_transaction
+do_copy	./tb/my_transaction.sv	/^  function void do_copy(uvm_object rhs);$/;"	f	language:SystemVerilog	class:my_transaction
 do_copy	./uvm-verilator/src/base/uvm_barrier.svh	/^  virtual function void do_copy (uvm_object rhs);$/;"	f	language:SystemVerilog	class:uvm_barrier
 do_copy	./uvm-verilator/src/base/uvm_event.svh	/^	virtual function void do_copy (uvm_object rhs);$/;"	f	language:SystemVerilog	class:uvm_event
 do_copy	./uvm-verilator/src/base/uvm_event.svh	/^	virtual function void do_copy (uvm_object rhs);$/;"	f	language:SystemVerilog	class:uvm_event_base
@@ -2185,7 +2182,7 @@ do_predict	./uvm-verilator/src/reg/uvm_reg.svh	/^function void uvm_reg::do_predi
 do_predict	./uvm-verilator/src/reg/uvm_reg_field.svh	/^function void uvm_reg_field::do_predict(uvm_reg_item      rw,$/;"	f	language:SystemVerilog	class:uvm_reg_field
 do_predict	./uvm-verilator/src/reg/uvm_reg_fifo.svh	/^    virtual function void do_predict(uvm_reg_item      rw,$/;"	f	language:SystemVerilog	class:uvm_reg_fifo
 do_predict	./uvm-verilator/src/reg/uvm_reg_indirect.svh	/^   virtual function void do_predict (uvm_reg_item      rw,$/;"	f	language:SystemVerilog	class:uvm_reg_indirect_data
-do_print	./tb/my_transaction.sv	/^    function void do_print(uvm_printer printer);$/;"	f	language:SystemVerilog	class:my_transaction
+do_print	./tb/my_transaction.sv	/^  function void do_print(uvm_printer printer);$/;"	f	language:SystemVerilog	class:my_transaction
 do_print	./uvm-verilator/src/base/uvm_barrier.svh	/^  virtual function void do_print (uvm_printer printer);$/;"	f	language:SystemVerilog	class:uvm_barrier
 do_print	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::do_print(uvm_printer printer);$/;"	f	language:SystemVerilog	class:uvm_component
 do_print	./uvm-verilator/src/base/uvm_event.svh	/^	virtual function void do_print (uvm_printer printer);$/;"	f	language:SystemVerilog	class:uvm_event
@@ -2363,8 +2360,8 @@ end_event	./uvm-verilator/src/reg/uvm_reg_map.svh	/^    uvm_event#(uvm_object) e
 end_node	./uvm-verilator/src/base/uvm_phase.svh	/^  uvm_phase new_node, begin_node, end_node, tmp_node;$/;"	r	language:SystemVerilog	function:uvm_phase.add
 end_of_elaboration	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::end_of_elaboration();  return; endfunction$/;"	f	language:SystemVerilog	class:uvm_component
 end_of_elaboration_ph	./uvm-verilator/src/base/uvm_domain.svh	/^uvm_phase end_of_elaboration_ph;$/;"	r	language:SystemVerilog
-end_of_elaboration_phase	./tb/uvm_test.sv	/^    virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
-end_of_elaboration_phase	./tb/uvm_test.sv	/^    virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:ReadByName
+end_of_elaboration_phase	./tb/uvm_test.sv	/^  virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
+end_of_elaboration_phase	./tb/uvm_test.sv	/^  virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:ReadByName
 end_of_elaboration_phase	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::end_of_elaboration_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_component
 end_of_elaboration_phase	./uvm-verilator/src/base/uvm_root.svh	/^	function void end_of_elaboration_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_root
 end_of_elaboration_phase	./uvm-verilator/src/comps/uvm_driver.svh	/^  virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_driver
@@ -2393,7 +2390,7 @@ endian	./uvm-verilator/src/reg/uvm_reg_map.svh	/^   uvm_endianness_e endian;$/;"
 endian	./uvm-verilator/src/reg/uvm_reg_map.svh	/^   uvm_endianness_e endian;$/;"	r	language:SystemVerilog	function:uvm_reg_map.do_print
 endian_name	./uvm-verilator/src/reg/uvm_mem.svh	/^       uvm_endianness_e endian_name;$/;"	r	language:SystemVerilog	function:uvm_mem.convert2string
 enough_bits	./uvm-verilator/src/base/uvm_packer.svh	/^function bit uvm_packer::enough_bits(int needed, string id);$/;"	f	language:SystemVerilog	class:uvm_packer
-environment	./tb/uvm_test.sv	/^            ReadByName environment;$/;"	r	language:SystemVerilog	module:top
+environment	./tb/uvm_test.sv	/^      ReadByName environment;$/;"	r	language:SystemVerilog	module:top
 ep	./uvm-verilator/src/reg/uvm_reg_map.svh	/^	uvm_event_pool ep;$/;"	r	language:SystemVerilog	task:uvm_reg_map.perform_accesses
 ep	./uvm-verilator/src/reg/uvm_reg_map.svh	/^    uvm_event_pool ep;$/;"	r	language:SystemVerilog	task:uvm_reg_map.do_read
 ep	./uvm-verilator/src/reg/uvm_reg_map.svh	/^    uvm_event_pool ep;$/;"	r	language:SystemVerilog	task:uvm_reg_map.do_write
@@ -2529,7 +2526,7 @@ extension_exists	./uvm-verilator/src/base/uvm_policy.svh	/^virtual function bit 
 extra_byte	./uvm-verilator/src/reg/uvm_reg_map.svh	/^	int unsigned extra_byte;$/;"	r	language:SystemVerilog	task:uvm_reg_map.do_bus_access
 extract	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::extract();             return; endfunction$/;"	f	language:SystemVerilog	class:uvm_component
 extract_ph	./uvm-verilator/src/base/uvm_domain.svh	/^uvm_phase extract_ph;$/;"	r	language:SystemVerilog
-extract_phase	./tb/uvm_test.sv	/^    virtual function void extract_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
+extract_phase	./tb/uvm_test.sv	/^  virtual function void extract_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
 extract_phase	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::extract_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_component
 extval	./uvm-verilator/src/base/uvm_root.svh	/^			string base, extval;$/;"	r	language:SystemVerilog	function:uvm_root.m_process_config
 f	./uvm-verilator/src/base/uvm_coreservice.svh	/^			uvm_default_factory f;$/;"	r	language:SystemVerilog	function:uvm_default_coreservice_t.get_factory
@@ -3847,7 +3844,7 @@ is_in_map	./uvm-verilator/src/reg/uvm_vreg.svh	/^function bit uvm_vreg::is_in_ma
 is_indv_accessible	./uvm-verilator/src/reg/uvm_reg_field.svh	/^function bit uvm_reg_field::is_indv_accessible(uvm_door_e  path,$/;"	f	language:SystemVerilog	class:uvm_reg_field
 is_initialized	./uvm-verilator/src/reg/uvm_reg_map.svh	/^   bit                    is_initialized;$/;"	r	language:SystemVerilog	class:uvm_reg_map_info
 is_int	./uvm-verilator/src/base/uvm_root.svh	/^function void uvm_root::m_process_config(string cfg, bit is_int);$/;"	p	language:SystemVerilog	function:uvm_root.m_process_config
-is_item	./tb/uvm_test.sv	/^    virtual task pre_do(bit is_item);$/;"	p	language:SystemVerilog	task:MyUvmSequence.pre_do
+is_item	./tb/uvm_test.sv	/^  virtual task pre_do(bit is_item);$/;"	p	language:SystemVerilog	task:MyUvmSequence.pre_do
 is_item	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual function bit is_item();$/;"	f	language:SystemVerilog	class:uvm_sequence_base.uvm_sequence_base
 is_item	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual task pre_do(bit is_item);$/;"	p	language:SystemVerilog	task:uvm_sequence_base.uvm_sequence_base.pre_do
 is_item	./uvm-verilator/src/seq/uvm_sequence_item.svh	/^  virtual function bit is_item();$/;"	f	language:SystemVerilog	class:uvm_sequence_item
@@ -5287,7 +5284,7 @@ message	./uvm-verilator/src/seq/uvm_sequence_item.svh	/^					  string message,$/
 message	./uvm-verilator/src/seq/uvm_sequence_item.svh	/^					  string message,$/;"	p	language:SystemVerilog	function:uvm_sequence_item.uvm_report_fatal
 message	./uvm-verilator/src/seq/uvm_sequence_item.svh	/^					 string message,$/;"	p	language:SystemVerilog	function:uvm_sequence_item.uvm_report_info
 message	./uvm-verilator/src/seq/uvm_sequence_item.svh	/^                                    string message,$/;"	p	language:SystemVerilog	function:uvm_sequence_item.uvm_report
-mid_do	./tb/uvm_test.sv	/^    virtual function void mid_do(uvm_sequence_item this_item);$/;"	f	language:SystemVerilog	class:MyUvmSequence
+mid_do	./tb/uvm_test.sv	/^  virtual function void mid_do(uvm_sequence_item this_item);$/;"	f	language:SystemVerilog	class:MyUvmSequence
 mid_do	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual function void mid_do(uvm_sequence_item this_item);$/;"	f	language:SystemVerilog	class:uvm_sequence_base.uvm_sequence_base
 min	./uvm-verilator/src/base/uvm_printer.svh	/^function void uvm_printer::print_array_range(int min, int max);$/;"	p	language:SystemVerilog	function:uvm_printer.print_array_range
 min	./uvm-verilator/src/base/uvm_spell_chkr.svh	/^    int min = a;$/;"	r	language:SystemVerilog	function:uvm_spell_chkr.minimum
@@ -5407,12 +5404,12 @@ n_bytes	./uvm-verilator/src/reg/uvm_reg_map.svh	/^	int unsigned n_bytes;$/;"	r	l
 n_bytes	./uvm-verilator/src/reg/uvm_reg_map.svh	/^                                     int unsigned     n_bytes,$/;"	p	language:SystemVerilog	function:uvm_reg_map.configure
 n_bytes_match_check	./uvm-verilator/src/reg/uvm_reg_map.svh	/^   begin : n_bytes_match_check$/;"	b	language:SystemVerilog	function:uvm_reg_map.add_submap
 n_used_bits	./uvm-verilator/src/reg/uvm_vreg.svh	/^   local int unsigned  n_used_bits;$/;"	r	language:SystemVerilog	class:uvm_vreg
-name	./tb/my_transaction.sv	/^    function new(string name = "my_transaction");$/;"	p	language:SystemVerilog	function:my_transaction.new
-name	./tb/uvm_test.sv	/^    function new(string name);$/;"	p	language:SystemVerilog	function:MyUvmSequence.new
-name	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:Complex.new
-name	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:MyUvmTest.new
-name	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:ReadByName.new
-name	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:Simple.new
+name	./tb/my_transaction.sv	/^  function new(string name = "my_transaction");$/;"	p	language:SystemVerilog	function:my_transaction.new
+name	./tb/uvm_test.sv	/^  function new(string name);$/;"	p	language:SystemVerilog	function:MyUvmSequence.new
+name	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:Complex.new
+name	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:MyUvmTest.new
+name	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:ReadByName.new
+name	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:Simple.new
 name	./uvm-verilator/src/base/uvm_barrier.svh	/^  function new (string name="", int threshold=0);$/;"	p	language:SystemVerilog	function:uvm_barrier.new
 name	./uvm-verilator/src/base/uvm_bottomup_phase.svh	/^    string name;$/;"	r	language:SystemVerilog	function:uvm_bottomup_phase.traverse
 name	./uvm-verilator/src/base/uvm_bottomup_phase.svh	/^  function new(string name);$/;"	p	language:SystemVerilog	function:uvm_bottomup_phase.new
@@ -5786,12 +5783,12 @@ needs_update	./uvm-verilator/src/reg/uvm_reg.svh	/^function bit uvm_reg::needs_u
 needs_update	./uvm-verilator/src/reg/uvm_reg_block.svh	/^function bit uvm_reg_block::needs_update();$/;"	f	language:SystemVerilog	class:uvm_reg_block
 needs_update	./uvm-verilator/src/reg/uvm_reg_field.svh	/^function bit uvm_reg_field::needs_update();$/;"	f	language:SystemVerilog	class:uvm_reg_field
 needs_update	./uvm-verilator/src/reg/uvm_reg_indirect.svh	/^   virtual function bit needs_update();$/;"	f	language:SystemVerilog	class:uvm_reg_indirect_data
-new	./tb/my_transaction.sv	/^    function new(string name = "my_transaction");$/;"	f	language:SystemVerilog	class:my_transaction
-new	./tb/uvm_test.sv	/^    function new(string name);$/;"	f	language:SystemVerilog	class:MyUvmSequence
-new	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	f	language:SystemVerilog	class:Complex
-new	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	f	language:SystemVerilog	class:MyUvmTest
-new	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	f	language:SystemVerilog	class:ReadByName
-new	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	f	language:SystemVerilog	class:Simple
+new	./tb/my_transaction.sv	/^  function new(string name = "my_transaction");$/;"	f	language:SystemVerilog	class:my_transaction
+new	./tb/uvm_test.sv	/^  function new(string name);$/;"	f	language:SystemVerilog	class:MyUvmSequence
+new	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	f	language:SystemVerilog	class:Complex
+new	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	f	language:SystemVerilog	class:MyUvmTest
+new	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	f	language:SystemVerilog	class:ReadByName
+new	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	f	language:SystemVerilog	class:Simple
 new	./uvm-verilator/src/base/uvm_barrier.svh	/^  function new (string name="", int threshold=0);$/;"	f	language:SystemVerilog	class:uvm_barrier
 new	./uvm-verilator/src/base/uvm_bottomup_phase.svh	/^  function new(string name);$/;"	f	language:SystemVerilog	class:uvm_bottomup_phase
 new	./uvm-verilator/src/base/uvm_callback.svh	/^   function new(T obj);$/;"	f	language:SystemVerilog	class:uvm_callback_iter
@@ -6057,24 +6054,24 @@ nv	./uvm-verilator/src/reg/uvm_reg_map.svh	/^				byte nv;$/;"	r	language:SystemV
 o	./uvm-verilator/src/base/uvm_callback.svh	/^        uvm_report_object o; $/;"	r	language:SystemVerilog	function:uvm_callbacks.add
 o	./uvm-verilator/src/reg/uvm_reg_map.svh	/^    uvm_object o;$/;"	r	language:SystemVerilog	task:uvm_reg_map.do_read
 o	./uvm-verilator/src/reg/uvm_reg_map.svh	/^    uvm_object o;$/;"	r	language:SystemVerilog	task:uvm_reg_map.do_write
-obj	./tb/uvm_test.sv	/^            Cls obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Complex #(uvm_agent) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Complex #(uvm_component) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Complex #(uvm_driver) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Complex #(uvm_env) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Complex #(uvm_monitor) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Complex #(uvm_scoreboard) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Complex #(uvm_sequencer) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Complex #(uvm_test) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Simple #(uvm_agent) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Simple #(uvm_component) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Simple #(uvm_driver) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Simple #(uvm_env) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Simple #(uvm_monitor) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Simple #(uvm_scoreboard) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Simple #(uvm_sequencer) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^            Simple #(uvm_test) obj;$/;"	r	language:SystemVerilog	module:top
-obj	./tb/uvm_test.sv	/^    Cls obj;$/;"	r	language:SystemVerilog	class:ReadByName
+obj	./tb/uvm_test.sv	/^      Cls obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Complex #(uvm_agent) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Complex #(uvm_component) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Complex #(uvm_driver) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Complex #(uvm_env) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Complex #(uvm_monitor) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Complex #(uvm_scoreboard) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Complex #(uvm_sequencer) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Complex #(uvm_test) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Simple #(uvm_agent) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Simple #(uvm_component) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Simple #(uvm_driver) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Simple #(uvm_env) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Simple #(uvm_monitor) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Simple #(uvm_scoreboard) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Simple #(uvm_sequencer) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^      Simple #(uvm_test) obj;$/;"	r	language:SystemVerilog	module:top
+obj	./tb/uvm_test.sv	/^  Cls obj;$/;"	r	language:SystemVerilog	class:ReadByName
 obj	./uvm-verilator/src/base/uvm_callback.svh	/^    uvm_object obj;$/;"	r	language:SystemVerilog	function:uvm_typed_callbacks.m_add_tw_cbs
 obj	./uvm-verilator/src/base/uvm_callback.svh	/^    uvm_object obj;$/;"	r	language:SystemVerilog	function:uvm_typed_callbacks.m_delete_tw_cbs
 obj	./uvm-verilator/src/base/uvm_callback.svh	/^   function new(T obj);$/;"	p	language:SystemVerilog	function:uvm_callback_iter.new
@@ -6439,10 +6436,10 @@ pair_ap	./uvm-verilator/src/comps/uvm_in_order_comparator.svh	/^  uvm_analysis_p
 pair_type	./uvm-verilator/src/comps/uvm_in_order_comparator.svh	/^     type pair_type = uvm_built_in_pair #( T ) )$/;"	c	language:SystemVerilog	class:uvm_in_order_comparator
 param_sequencer	./uvm-verilator/src/seq/uvm_sequence.svh	/^  sequencer_t        param_sequencer;$/;"	r	language:SystemVerilog	class:uvm_sequence
 param_t	./uvm-verilator/src/seq/uvm_sequencer_param_base.svh	/^  REQ param_t;$/;"	r	language:SystemVerilog	function:uvm_sequencer_param_base.send_request
-parent	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:Complex.new
-parent	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:MyUvmTest.new
-parent	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:ReadByName.new
-parent	./tb/uvm_test.sv	/^    function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:Simple.new
+parent	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:Complex.new
+parent	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:MyUvmTest.new
+parent	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:ReadByName.new
+parent	./tb/uvm_test.sv	/^  function new(string name, uvm_component parent = null);$/;"	p	language:SystemVerilog	function:Simple.new
 parent	./uvm-verilator/src/base/uvm_component.svh	/^function uvm_component::new (string name, uvm_component parent);$/;"	p	language:SystemVerilog	function:uvm_component.new
 parent	./uvm-verilator/src/base/uvm_factory.svh	/^                                                              uvm_component parent);$/;"	p	language:SystemVerilog	function:uvm_default_factory.create_component_by_name
 parent	./uvm-verilator/src/base/uvm_factory.svh	/^                                                            uvm_component parent);$/;"	p	language:SystemVerilog	function:uvm_default_factory.create_component_by_type
@@ -6722,21 +6719,21 @@ ph	./uvm-verilator/src/base/uvm_bottomup_phase.svh	/^          uvm_phase ph = th
 ph	./uvm-verilator/src/base/uvm_phase.svh	/^    uvm_phase ph = uvm_domain::get_common_domain();$/;"	r	language:SystemVerilog	task:uvm_phase.m_run_phases
 ph	./uvm-verilator/src/base/uvm_task_phase.svh	/^          uvm_phase ph = this; $/;"	r	language:SystemVerilog	function:uvm_task_phase.m_traverse
 ph	./uvm-verilator/src/base/uvm_topdown_phase.svh	/^              uvm_phase ph = this; $/;"	r	language:SystemVerilog	function:uvm_topdown_phase.traverse
-phase	./tb/uvm_test.sv	/^    task run_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	task:Complex.run_phase
-phase	./tb/uvm_test.sv	/^    task run_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	task:MyUvmTest.run_phase
-phase	./tb/uvm_test.sv	/^    task run_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	task:ReadByName.run_phase
-phase	./tb/uvm_test.sv	/^    virtual function void build_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.build_phase
-phase	./tb/uvm_test.sv	/^    virtual function void build_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:MyUvmTest.build_phase
-phase	./tb/uvm_test.sv	/^    virtual function void build_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:ReadByName.build_phase
-phase	./tb/uvm_test.sv	/^    virtual function void check_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.check_phase
-phase	./tb/uvm_test.sv	/^    virtual function void connect_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.connect_phase
-phase	./tb/uvm_test.sv	/^    virtual function void connect_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:MyUvmTest.connect_phase
-phase	./tb/uvm_test.sv	/^    virtual function void connect_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:ReadByName.connect_phase
-phase	./tb/uvm_test.sv	/^    virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.end_of_elaboration_phase
-phase	./tb/uvm_test.sv	/^    virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:ReadByName.end_of_elaboration_phase
-phase	./tb/uvm_test.sv	/^    virtual function void extract_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.extract_phase
-phase	./tb/uvm_test.sv	/^    virtual function void report_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.report_phase
-phase	./tb/uvm_test.sv	/^    virtual function void start_of_simulation_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.start_of_simulation_phase
+phase	./tb/uvm_test.sv	/^  task run_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	task:Complex.run_phase
+phase	./tb/uvm_test.sv	/^  task run_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	task:MyUvmTest.run_phase
+phase	./tb/uvm_test.sv	/^  task run_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	task:ReadByName.run_phase
+phase	./tb/uvm_test.sv	/^  virtual function void build_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.build_phase
+phase	./tb/uvm_test.sv	/^  virtual function void build_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:MyUvmTest.build_phase
+phase	./tb/uvm_test.sv	/^  virtual function void build_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:ReadByName.build_phase
+phase	./tb/uvm_test.sv	/^  virtual function void check_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.check_phase
+phase	./tb/uvm_test.sv	/^  virtual function void connect_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.connect_phase
+phase	./tb/uvm_test.sv	/^  virtual function void connect_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:MyUvmTest.connect_phase
+phase	./tb/uvm_test.sv	/^  virtual function void connect_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:ReadByName.connect_phase
+phase	./tb/uvm_test.sv	/^  virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.end_of_elaboration_phase
+phase	./tb/uvm_test.sv	/^  virtual function void end_of_elaboration_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:ReadByName.end_of_elaboration_phase
+phase	./tb/uvm_test.sv	/^  virtual function void extract_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.extract_phase
+phase	./tb/uvm_test.sv	/^  virtual function void report_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.report_phase
+phase	./tb/uvm_test.sv	/^  virtual function void start_of_simulation_phase(uvm_phase phase);$/;"	p	language:SystemVerilog	function:Complex.start_of_simulation_phase
 phase	./uvm-verilator/src/base/uvm_bottomup_phase.svh	/^                                          uvm_phase phase);$/;"	p	language:SystemVerilog	function:uvm_bottomup_phase.execute
 phase	./uvm-verilator/src/base/uvm_bottomup_phase.svh	/^                                 uvm_phase phase,$/;"	p	language:SystemVerilog	function:uvm_bottomup_phase.traverse
 phase	./uvm-verilator/src/base/uvm_common_phases.svh	/^   virtual function void exec_func(uvm_component comp, uvm_phase phase);$/;"	p	language:SystemVerilog	function:uvm_build_phase.exec_func
@@ -6901,10 +6898,10 @@ pos	./uvm-verilator/src/base/uvm_callback.svh	/^    int pos = m_cb_find(m_t_inst
 pos	./uvm-verilator/src/base/uvm_callback.svh	/^    int pos;$/;"	r	language:SystemVerilog	function:uvm_callbacks.delete
 pos	./uvm-verilator/src/base/uvm_misc.svh	/^  int  pos;$/;"	r	language:SystemVerilog	function:uvm_leaf_scope
 pos	./uvm-verilator/src/base/uvm_misc.svh	/^  int pos;$/;"	r	language:SystemVerilog	function:uvm_instance_scope
-post_body	./tb/uvm_test.sv	/^    virtual task post_body();$/;"	t	language:SystemVerilog	class:MyUvmSequence
+post_body	./tb/uvm_test.sv	/^  virtual task post_body();$/;"	t	language:SystemVerilog	class:MyUvmSequence
 post_body	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual task post_body();$/;"	t	language:SystemVerilog	class:uvm_sequence_base.uvm_sequence_base
 post_configure_phase	./uvm-verilator/src/base/uvm_component.svh	/^task uvm_component::post_configure_phase(uvm_phase phase); return; endtask$/;"	t	language:SystemVerilog	class:uvm_component
-post_do	./tb/uvm_test.sv	/^    virtual function void post_do(uvm_sequence_item this_item);$/;"	f	language:SystemVerilog	class:MyUvmSequence
+post_do	./tb/uvm_test.sv	/^  virtual function void post_do(uvm_sequence_item this_item);$/;"	f	language:SystemVerilog	class:MyUvmSequence
 post_do	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual function void post_do(uvm_sequence_item this_item);$/;"	f	language:SystemVerilog	class:uvm_sequence_base.uvm_sequence_base
 post_main_phase	./uvm-verilator/src/base/uvm_component.svh	/^task uvm_component::post_main_phase(uvm_phase phase);      return; endtask$/;"	t	language:SystemVerilog	class:uvm_component
 post_predict	./uvm-verilator/src/reg/uvm_reg_cbs.svh	/^   virtual function void post_predict(input uvm_reg_field  fld,$/;"	f	language:SystemVerilog	class:uvm_reg_cbs
@@ -6936,10 +6933,10 @@ post_write	./uvm-verilator/src/reg/uvm_vreg_field.svh	/^   virtual task post_wri
 post_write	./uvm-verilator/src/reg/uvm_vreg_field.svh	/^   virtual task post_write(uvm_vreg_field        field,$/;"	t	language:SystemVerilog	class:uvm_vreg_field_cbs
 pre_abort	./uvm-verilator/src/base/uvm_component.svh	/^  virtual function void pre_abort;$/;"	f	language:SystemVerilog	class:uvm_component
 pre_abort	./uvm-verilator/src/base/uvm_run_test_callback.svh	/^  virtual function void pre_abort();$/;"	f	language:SystemVerilog	class:uvm_run_test_callback
-pre_body	./tb/uvm_test.sv	/^    virtual task pre_body();$/;"	t	language:SystemVerilog	class:MyUvmSequence
+pre_body	./tb/uvm_test.sv	/^  virtual task pre_body();$/;"	t	language:SystemVerilog	class:MyUvmSequence
 pre_body	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual task pre_body();$/;"	t	language:SystemVerilog	class:uvm_sequence_base.uvm_sequence_base
 pre_configure_phase	./uvm-verilator/src/base/uvm_component.svh	/^task uvm_component::pre_configure_phase(uvm_phase phase);  return; endtask$/;"	t	language:SystemVerilog	class:uvm_component
-pre_do	./tb/uvm_test.sv	/^    virtual task pre_do(bit is_item);$/;"	t	language:SystemVerilog	class:MyUvmSequence
+pre_do	./tb/uvm_test.sv	/^  virtual task pre_do(bit is_item);$/;"	t	language:SystemVerilog	class:MyUvmSequence
 pre_do	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual task pre_do(bit is_item);$/;"	t	language:SystemVerilog	class:uvm_sequence_base.uvm_sequence_base
 pre_main_phase	./uvm-verilator/src/base/uvm_component.svh	/^task uvm_component::pre_main_phase(uvm_phase phase);       return; endtask$/;"	t	language:SystemVerilog	class:uvm_component
 pre_predict	./uvm-verilator/src/reg/uvm_reg_predictor.svh	/^  virtual function void pre_predict(uvm_reg_item rw);$/;"	f	language:SystemVerilog	class:uvm_reg_predictor
@@ -7047,7 +7044,7 @@ print_sequence_info	./uvm-verilator/src/seq/uvm_sequence_item.svh	/^  bit       
 print_string	./uvm-verilator/src/base/uvm_printer.svh	/^function void uvm_printer::print_string (string name,$/;"	f	language:SystemVerilog	class:uvm_printer
 print_time	./uvm-verilator/src/base/uvm_printer.svh	/^function void uvm_printer::print_time (string name,$/;"	f	language:SystemVerilog	class:uvm_printer
 print_topology	./uvm-verilator/src/base/uvm_root.svh	/^function void uvm_root::print_topology(uvm_printer printer=null);$/;"	f	language:SystemVerilog	class:uvm_root
-printer	./tb/my_transaction.sv	/^    function void do_print(uvm_printer printer);$/;"	p	language:SystemVerilog	function:my_transaction.do_print
+printer	./tb/my_transaction.sv	/^  function void do_print(uvm_printer printer);$/;"	p	language:SystemVerilog	function:my_transaction.do_print
 printer	./uvm-verilator/src/base/uvm_barrier.svh	/^  virtual function void do_print (uvm_printer printer);$/;"	p	language:SystemVerilog	function:uvm_barrier.do_print
 printer	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::do_print(uvm_printer printer);$/;"	p	language:SystemVerilog	function:uvm_component.do_print
 printer	./uvm-verilator/src/base/uvm_coreservice.svh	/^	virtual function void set_default_printer(uvm_printer printer);$/;"	p	language:SystemVerilog	function:uvm_default_coreservice_t.set_default_printer
@@ -7511,7 +7508,7 @@ report_message	./uvm-verilator/src/seq/uvm_sequence_item.svh	/^  virtual functio
 report_object_name	./uvm-verilator/src/base/uvm_report_server.svh	/^                                                 string report_object_name = "");$/;"	p	language:SystemVerilog	function:uvm_default_report_server.compose_report_message
 report_ok	./uvm-verilator/src/base/uvm_report_server.svh	/^    bit report_ok = 1;$/;"	r	language:SystemVerilog	function:uvm_default_report_server.process_report_message
 report_ph	./uvm-verilator/src/base/uvm_domain.svh	/^uvm_phase report_ph;$/;"	r	language:SystemVerilog
-report_phase	./tb/uvm_test.sv	/^    virtual function void report_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
+report_phase	./tb/uvm_test.sv	/^  virtual function void report_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
 report_phase	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::report_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_component
 report_server	./uvm-verilator/src/base/uvm_coreservice.svh	/^	local uvm_report_server report_server;$/;"	r	language:SystemVerilog	class:uvm_default_coreservice_t
 report_summarize	./uvm-verilator/src/base/uvm_report_server.svh	/^  virtual function void report_summarize(UVM_FILE file = UVM_STDOUT);$/;"	f	language:SystemVerilog	class:uvm_default_report_server
@@ -7691,8 +7688,8 @@ rh	./uvm-verilator/src/base/uvm_report_catcher.svh	/^      uvm_report_handler rh
 rh	./uvm-verilator/src/base/uvm_report_message.svh	/^  virtual function void set_report_handler(uvm_report_handler rh);$/;"	p	language:SystemVerilog	function:uvm_report_message.set_report_handler
 rh	./uvm-verilator/src/base/uvm_report_server.svh	/^       uvm_report_handler rh = report_message.get_report_handler();$/;"	r	language:SystemVerilog	function:uvm_default_report_server.execute_report_message
 rh	./uvm-verilator/src/base/uvm_root.svh	/^  uvm_report_handler rh;$/;"	r	language:SystemVerilog	function:uvm_root.new
-rhs	./tb/my_transaction.sv	/^    function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	p	language:SystemVerilog	function:my_transaction.do_compare
-rhs	./tb/my_transaction.sv	/^    function void do_copy(uvm_object rhs);$/;"	p	language:SystemVerilog	function:my_transaction.do_copy
+rhs	./tb/my_transaction.sv	/^  function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	p	language:SystemVerilog	function:my_transaction.do_compare
+rhs	./tb/my_transaction.sv	/^  function void do_copy(uvm_object rhs);$/;"	p	language:SystemVerilog	function:my_transaction.do_copy
 rhs	./uvm-verilator/src/base/uvm_barrier.svh	/^  virtual function void do_copy (uvm_object rhs);$/;"	p	language:SystemVerilog	function:uvm_barrier.do_copy
 rhs	./uvm-verilator/src/base/uvm_comparer.svh	/^                                          real rhs);$/;"	p	language:SystemVerilog	function:uvm_comparer.compare_field_real
 rhs	./uvm-verilator/src/base/uvm_comparer.svh	/^                                          uvm_integral_t rhs, $/;"	p	language:SystemVerilog	function:uvm_comparer.compare_field_int
@@ -7759,8 +7756,8 @@ rhs	./uvm-verilator/src/seq/uvm_sequence_library.svh	/^      uvm_object_wrapper 
 rhs	./uvm-verilator/src/tlm2/uvm_tlm2_generic_payload.svh	/^  function bit do_compare(uvm_object rhs, uvm_comparer comparer);$/;"	p	language:SystemVerilog	function:uvm_tlm_generic_payload.do_compare
 rhs	./uvm-verilator/src/tlm2/uvm_tlm2_generic_payload.svh	/^  function void do_copy(uvm_object rhs);$/;"	p	language:SystemVerilog	function:uvm_tlm_generic_payload.do_copy
 rhs	./uvm-verilator/src/tlm2/uvm_tlm2_generic_payload.svh	/^  virtual function void do_copy(uvm_object rhs);$/;"	p	language:SystemVerilog	function:uvm_tlm_extension_base.do_copy
-rhs_	./tb/my_transaction.sv	/^        my_transaction rhs_;$/;"	r	language:SystemVerilog	function:my_transaction.do_compare
-rhs_	./tb/my_transaction.sv	/^        my_transaction rhs_;$/;"	r	language:SystemVerilog	function:my_transaction.do_copy
+rhs_	./tb/my_transaction.sv	/^    my_transaction rhs_;$/;"	r	language:SystemVerilog	function:my_transaction.do_compare
+rhs_	./tb/my_transaction.sv	/^    my_transaction rhs_;$/;"	r	language:SystemVerilog	function:my_transaction.do_copy
 rhs_	./uvm-verilator/src/base/uvm_report_server.svh	/^                uvm_report_server rhs_;$/;"	r	language:SystemVerilog	function:uvm_report_server.do_copy
 rhs_	./uvm-verilator/src/comps/uvm_pair.svh	/^    this_type rhs_;$/;"	r	language:SystemVerilog	function:uvm_built_in_pair.do_compare
 rhs_	./uvm-verilator/src/comps/uvm_pair.svh	/^    this_type rhs_;$/;"	r	language:SystemVerilog	function:uvm_built_in_pair.do_copy
@@ -7919,9 +7916,9 @@ rtype	./uvm-verilator/src/base/uvm_factory.svh	/^  uvm_object_wrapper rtype;$/;"
 rtype	./uvm-verilator/src/base/uvm_resource_db.svh	/^          input string rtype,$/;"	p	language:SystemVerilog	function:uvm_resource_db.m_show_msg
 run	./uvm-verilator/src/base/uvm_component.svh	/^task          uvm_component::run();                 return; endtask$/;"	t	language:SystemVerilog	class:uvm_component
 run_ph	./uvm-verilator/src/base/uvm_domain.svh	/^uvm_phase run_ph;$/;"	r	language:SystemVerilog
-run_phase	./tb/uvm_test.sv	/^    task run_phase(uvm_phase phase);$/;"	t	language:SystemVerilog	class:Complex
-run_phase	./tb/uvm_test.sv	/^    task run_phase(uvm_phase phase);$/;"	t	language:SystemVerilog	class:MyUvmTest
-run_phase	./tb/uvm_test.sv	/^    task run_phase(uvm_phase phase);$/;"	t	language:SystemVerilog	class:ReadByName
+run_phase	./tb/uvm_test.sv	/^  task run_phase(uvm_phase phase);$/;"	t	language:SystemVerilog	class:Complex
+run_phase	./tb/uvm_test.sv	/^  task run_phase(uvm_phase phase);$/;"	t	language:SystemVerilog	class:MyUvmTest
+run_phase	./tb/uvm_test.sv	/^  task run_phase(uvm_phase phase);$/;"	t	language:SystemVerilog	class:ReadByName
 run_phase	./uvm-verilator/src/base/uvm_component.svh	/^task          uvm_component::run_phase(uvm_phase phase);$/;"	t	language:SystemVerilog	class:uvm_component
 run_phase	./uvm-verilator/src/base/uvm_root.svh	/^task uvm_root::run_phase (uvm_phase phase);$/;"	t	language:SystemVerilog	class:uvm_root
 run_phase	./uvm-verilator/src/comps/uvm_in_order_comparator.svh	/^  virtual task run_phase(uvm_phase phase);$/;"	t	language:SystemVerilog	class:uvm_in_order_comparator
@@ -8215,7 +8212,7 @@ separator	./uvm-verilator/src/reg/uvm_reg_file.svh	/^                           
 separators	./uvm-verilator/src/base/uvm_printer.svh	/^      string separators;$/;"	r	language:SystemVerilog	function:uvm_tree_printer.m_emit_element
 separators	./uvm-verilator/src/base/uvm_printer.svh	/^function void uvm_line_printer::set_separators(string separators) ;$/;"	p	language:SystemVerilog	function:uvm_line_printer.set_separators
 separators	./uvm-verilator/src/base/uvm_printer.svh	/^function void uvm_tree_printer::set_separators(string separators) ;$/;"	p	language:SystemVerilog	function:uvm_tree_printer.set_separators
-seq	./tb/uvm_test.sv	/^            MyUvmSequence seq;$/;"	r	language:SystemVerilog	module:top
+seq	./tb/uvm_test.sv	/^      MyUvmSequence seq;$/;"	r	language:SystemVerilog	module:top
 seq	./uvm-verilator/src/base/uvm_component.svh	/^      uvm_sequence_item seq;$/;"	r	language:SystemVerilog	function:uvm_component.m_begin_tr
 seq	./uvm-verilator/src/base/uvm_objection.svh	/^    uvm_sequence_base seq;$/;"	r	language:SystemVerilog	function:uvm_objection.m_get_parent
 seq	./uvm-verilator/src/reg/sequences/uvm_reg_mem_built_in_seq.svh	/^         uvm_mem_access_seq seq = uvm_mem_access_seq::type_id::create("mem_access_seq");$/;"	r	language:SystemVerilog	task:uvm_reg_mem_built_in_seq.body
@@ -8791,7 +8788,7 @@ start	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual task start (uvm_
 start_item	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual task start_item (uvm_sequence_item item,$/;"	t	language:SystemVerilog	class:uvm_sequence_base.uvm_sequence_base
 start_of_simulation	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::start_of_simulation(); return; endfunction$/;"	f	language:SystemVerilog	class:uvm_component
 start_of_simulation_ph	./uvm-verilator/src/base/uvm_domain.svh	/^uvm_phase start_of_simulation_ph;$/;"	r	language:SystemVerilog
-start_of_simulation_phase	./tb/uvm_test.sv	/^    virtual function void start_of_simulation_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
+start_of_simulation_phase	./tb/uvm_test.sv	/^  virtual function void start_of_simulation_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:Complex
 start_of_simulation_phase	./uvm-verilator/src/base/uvm_component.svh	/^function void uvm_component::start_of_simulation_phase(uvm_phase phase);$/;"	f	language:SystemVerilog	class:uvm_component
 start_offset	./uvm-verilator/src/reg/uvm_mem_mam.svh	/^   rand bit [63:0] start_offset;$/;"	r	language:SystemVerilog	class:uvm_mem_mam_cfg
 start_offset	./uvm-verilator/src/reg/uvm_mem_mam.svh	/^   rand bit [63:0] start_offset;$/;"	r	language:SystemVerilog	class:uvm_mem_mam_policy
@@ -9125,8 +9122,8 @@ this_imp_type	./uvm-verilator/src/tlm1/uvm_imps.svh	/^  typedef IMP     this_imp
 this_imp_type	./uvm-verilator/src/tlm1/uvm_imps.svh	/^  typedef IMP     this_imp_type;$/;"	T	language:SystemVerilog	class:uvm_nonblocking_master_imp
 this_imp_type	./uvm-verilator/src/tlm1/uvm_imps.svh	/^  typedef IMP     this_imp_type;$/;"	T	language:SystemVerilog	class:uvm_nonblocking_slave_imp
 this_imp_type	./uvm-verilator/src/tlm1/uvm_imps.svh	/^  typedef IMP     this_imp_type;$/;"	T	language:SystemVerilog	class:uvm_slave_imp
-this_item	./tb/uvm_test.sv	/^    virtual function void mid_do(uvm_sequence_item this_item);$/;"	p	language:SystemVerilog	function:MyUvmSequence.mid_do
-this_item	./tb/uvm_test.sv	/^    virtual function void post_do(uvm_sequence_item this_item);$/;"	p	language:SystemVerilog	function:MyUvmSequence.post_do
+this_item	./tb/uvm_test.sv	/^  virtual function void mid_do(uvm_sequence_item this_item);$/;"	p	language:SystemVerilog	function:MyUvmSequence.mid_do
+this_item	./tb/uvm_test.sv	/^  virtual function void post_do(uvm_sequence_item this_item);$/;"	p	language:SystemVerilog	function:MyUvmSequence.post_do
 this_item	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual function void mid_do(uvm_sequence_item this_item);$/;"	p	language:SystemVerilog	function:uvm_sequence_base.uvm_sequence_base.mid_do
 this_item	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  virtual function void post_do(uvm_sequence_item this_item);$/;"	p	language:SystemVerilog	function:uvm_sequence_base.uvm_sequence_base.post_do
 this_item	./uvm-verilator/src/seq/uvm_sequence_item.svh	/^    uvm_sequence_item this_item;$/;"	r	language:SystemVerilog	function:uvm_sequence_item.get_sequence_path
@@ -9417,7 +9414,7 @@ typename	./uvm-verilator/src/base/uvm_callback.svh	/^  static string typename;$/
 types	./uvm-verilator/src/base/uvm_misc.svh	/^    types_t types = find_all(start);$/;"	r	language:SystemVerilog	function:uvm_utils.find
 types	./uvm-verilator/src/base/uvm_misc.svh	/^    types_t types;$/;"	r	language:SystemVerilog	function:uvm_utils.find_all
 types_t	./uvm-verilator/src/base/uvm_misc.svh	/^  typedef TYPE types_t[$];$/;"	T	language:SystemVerilog	class:uvm_utils
-u_counter	./tb/top.sv	/^    counter u_counter ($/;"	i	language:SystemVerilog	module:top	typeref:module:counter
+u_counter	./tb/top.sv	/^  counter u_counter ($/;"	i	language:SystemVerilog	module:top	typeref:module:counter
 u_inst	./uvm-verilator/src/base/uvm_callback.svh	/^    this_user_type u_inst = this_user_type::get();$/;"	r	language:SystemVerilog	function:uvm_derived_callbacks.register_super_type
 ungrab	./uvm-verilator/src/seq/uvm_sequence_base.svh	/^  function void  ungrab(uvm_sequencer_base sequencer = null);$/;"	f	language:SystemVerilog	class:uvm_sequence_base.uvm_sequence_base
 ungrab	./uvm-verilator/src/seq/uvm_sequencer_base.svh	/^function void  uvm_sequencer_base::ungrab(uvm_sequence_base sequence_ptr);$/;"	f	language:SystemVerilog	class:uvm_sequencer_base
