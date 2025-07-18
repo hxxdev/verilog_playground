@@ -1,3 +1,6 @@
 [submodule "verilator"]
 	path = verilator
 	url = https://github.com/verilator/verilator.git
+[submodule "uvm-verilator"]
+	path = uvm-verilator
+	url = git@github.com:chipsalliance/uvm-verilator.git

@@ -1,0 +1,11 @@
+
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/base
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/comps
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/dap
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/deprecated
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/dpi
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/macros
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/reg
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/seq
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/tlm1
+-I/home/hxxdev/dev/LazyVerilog/uvm/src/tlm2

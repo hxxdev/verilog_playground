@@ -1,0 +1,61 @@
+# list of directories with header files
+include_dirs:
+  - ./uvm/src
+  - ./uvm/src/base
+  - ./uvm/src/comps
+  - ./uvm/src/dap
+  - ./uvm/src/deprecated
+  - ./uvm/src/dpi
+  - ./uvm/src/macros
+  - ./uvm/src/reg
+  - ./uvm/src/seq
+  - ./uvm/src/tlm1
+  - ./uvm/src/tlm2
+# list of directories to recursively search for SystemVerilog/Verilog sources
+source_dirs:
+  - ./uvm/src
+  - ./rtl
+  - ./tb
+# if true recursively search the working directory for files to run diagnostics on
+# default: true
+auto_search_workdir: true
+# verible tool configuration
+verible:
+  # verible-verilog-syntax configuration
+  syntax:
+    # default: true if in path
+    enabled: true
+    path: "verible-verilog-syntax"
+    # default: none
+    args:
+      - --lang
+      - sv
+  # verible-verilog-format configuration
+  format:
+    # default: true if in path
+    enabled: true
+    path: "verible-verilog-format"
+    # default: none
+    args:
+      - --indentation_spaces
+      - 4
+verilator:
+  # verilator configuration
+  syntax:
+    # default: true if in path
+    enabled: true
+    path: "verilator"
+    # default: specified below
+    args:
+      - --lint-only
+      - --sv
+      - -Wall
+      - -f
+      - /home/hxxdev/dev/systemverilog/vcode.f
+      - +define+VERILATOR
+      - +define+UVM_REPORT_DISABLE_FILE_LINE
+      - +define+SVA_ON
+      - +define+UVM_NO_DPI
+# log_level
+# Error|Warn|Info|Debug|Trace[default: Info]
+log_level: Debug
