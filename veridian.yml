@@ -1,19 +1,19 @@
 # list of directories with header files
 include_dirs:
-  - ./uvm/src
-  - ./uvm/src/base
-  - ./uvm/src/comps
-  - ./uvm/src/dap
-  - ./uvm/src/deprecated
-  - ./uvm/src/dpi
-  - ./uvm/src/macros
-  - ./uvm/src/reg
-  - ./uvm/src/seq
-  - ./uvm/src/tlm1
-  - ./uvm/src/tlm2
+  - ./uvm-verilator/src
+  - ./uvm-verilator/src/base
+  - ./uvm-verilator/src/comps
+  - ./uvm-verilator/src/dap
+  - ./uvm-verilator/src/deprecated
+  - ./uvm-verilator/src/dpi
+  - ./uvm-verilator/src/macros
+  - ./uvm-verilator/src/reg
+  - ./uvm-verilator/src/seq
+  - ./uvm-verilator/src/tlm1
+  - ./uvm-verilator/src/tlm2
 # list of directories to recursively search for SystemVerilog/Verilog sources
 source_dirs:
-  - ./uvm/src
+  - ./uvm-verilator/src
   - ./rtl
   - ./tb
 # if true recursively search the working directory for files to run diagnostics on
