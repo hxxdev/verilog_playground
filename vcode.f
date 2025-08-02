@@ -1,6 +1,10 @@
--I/home/hxxdev/dev/systemverilog/uvm-verilator/src
-/home/hxxdev/dev/systemverilog/uvm-verilator/src/uvm.sv
-/home/hxxdev/dev/systemverilog/uvm-verilator/src/uvm_pkg.sv
-/home/hxxdev/dev/systemverilog/rtl/counter.sv
-/home/hxxdev/dev/systemverilog/tb/top.sv
-/home/hxxdev/dev/systemverilog/tb/uvm_test.sv
+-I$IP_HOME/uvm/src
+-I$IP_HOME/rtl
+-I$IP_HOME/tb
+$IP_HOME/uvm/src/uvm_pkg.sv
+$IP_HOME/rtl/alu_decoder.sv
+$IP_HOME/rtl/alu_core.sv
+$IP_HOME/rtl/alu.sv
+$IP_HOME/tb/alu_tb_pkg.sv
+$IP_HOME/tb/alu_if.sv
+$IP_HOME/tb/alu_tb_top.sv

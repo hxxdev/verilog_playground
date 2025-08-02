@@ -14,8 +14,4 @@ module counter (
     end
   end
 
-  always_comb begin
-    count <= 3;
-  end
-
 endmodule
